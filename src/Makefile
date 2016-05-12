@@ -1,6 +1,9 @@
 SUBMODULES = bash git emacs vim
 
-install:
+dep:
+	sudo pip install virtualenv
+
+install: dep
 	for dir in $(SUBMODULES); do \
 		$(MAKE) -C $$dir install; \
 	done
