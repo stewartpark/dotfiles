@@ -1,4 +1,4 @@
-SUBMODULES = bash git emacs vim
+SUBMODULES = bash gnupg git emacs vim
 
 dep:
 	sudo pip install virtualenv
