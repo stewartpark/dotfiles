@@ -1,0 +1,5 @@
+source ~/.bash.inc/alias.sh
+source ~/.bash.inc/prompt.sh
+source ~/.bash.inc/git-completion.sh
+source ~/.bash.inc/git-prompt.sh
+source ~/.bash.inc/python-venv.sh

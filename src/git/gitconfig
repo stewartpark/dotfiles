@@ -1,0 +1,8 @@
+[user]
+	email = hello@stewartjpark.com 
+	name = Stewart Park
+	signingkey = B85463C5
+[push]
+	default = simple
+[commit]
+	gpgsign = true
