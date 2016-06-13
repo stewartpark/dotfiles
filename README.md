@@ -1,6 +1,8 @@
 Stewart's Dotfiles
 ==================
 
+[![Build Status](https://travis-ci.org/stewartpark/dotfiles.svg?branch=master)](https://travis-ci.org/stewartpark/dotfiles)
+
 An automated dotfiles installer. Still a work-in-progress, but now at least it works.
 
 How to use
