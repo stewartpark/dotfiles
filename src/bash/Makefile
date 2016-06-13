@@ -1,3 +1,10 @@
+check:
+	which bash
+	which git
+	which gpg
+	which gpg-agent
+	which python
+	which vi
 
 install: uninstall
 	ln -sf $(shell pwd)/inc $(HOME)/.bash.inc

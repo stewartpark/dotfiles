@@ -1,5 +1,8 @@
+check:
+	which gpg
+	which gpg-agent
+
 install: uninstall
-	echo "install"
+	ln -sf gpg.conf ~/.gnupg/gpg.conf
 
 uninstall:
-	echo "uninstall"

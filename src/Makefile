@@ -1,9 +1,11 @@
-SUBMODULES = bash gnupg git emacs vim
+SUBMODULES = bash gnupg git python emacs vim
 
-dep:
-	sudo pip install virtualenv
+check:
+	for dir in $(SUBMODULES); do \
+		$(MAKE) -C $$dir check; \
+	done
 
-install: dep
+install: check
 	for dir in $(SUBMODULES); do \
 		$(MAKE) -C $$dir install; \
 	done
