@@ -3,6 +3,6 @@ check:
 	which gpg-agent
 
 install: uninstall
-	ln -sf gpg.conf ~/.gnupg/gpg.conf
+	ln -sf `pwd`/gpg.conf ~/.gnupg/gpg.conf
 
 uninstall:
