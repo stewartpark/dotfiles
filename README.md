@@ -6,7 +6,7 @@ An automated dotfiles installer. Still a work-in-progress, but now at least it w
 To do
 =====
 
-- [-] Install basic setups
+- [ ] Install basic setups
     - [x] Bash
     - [x] GnuPG
     - [x] Git
