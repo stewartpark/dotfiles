@@ -3,7 +3,6 @@ check:
 	which cmake
 	which gcc
 	which python
-	which pip
 
 install: uninstall
 	sudo pip install neovim  # Python support of Neovim
