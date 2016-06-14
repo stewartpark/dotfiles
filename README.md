@@ -26,6 +26,12 @@ If you made any changes and want to see if it still works, try to run tests:
 $ make test
 ```
 
+You also have to import Stewart Park's GPG public/private keys. This part makes everyone else not able to use this dotfiles, you can fork the project and modify it. You can import keys by the following:
+
+```bash
+$ make import_gpg
+```
+
 To do
 =====
 
