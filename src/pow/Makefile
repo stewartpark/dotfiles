@@ -7,7 +7,7 @@ install: uninstall
 	if [ X"$(OS)" = X"Darwin" ]; then \
 	curl get.pow.cx | sh; \
 	else \
-	echo "Pow is Mac-only."; \
+	echo "Pow is Macintosh only."; \
 	fi;
 
 uninstall:
