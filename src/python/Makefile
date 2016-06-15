@@ -1,10 +1,8 @@
 check:
 	which python
-	which easy_install
 
 install:
-	sudo easy_install pip
-	sudo pip install virtualenv
-	sudo pip install virtualenvwrapper
+	curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+	./install-python.sh
 
 uninstall:
