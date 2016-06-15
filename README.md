@@ -39,8 +39,9 @@ To do
     - [x] Bash
     - [x] GnuPG
     - [x] Git
-    - [x] Python/virtualenv
-    - [x] Vim
+    - [x] Python/pyenv
+    - [x] Ruby/rvm
+    - [x] NeoVim
     - [ ] Emacs
     - [ ] Atom
 - [x] Have a basic test that at least tries to install all the things
