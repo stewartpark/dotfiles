@@ -6,7 +6,8 @@ RUN useradd -ms /bin/bash testuser
 RUN adduser testuser sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 WORKDIR /home/testuser/dotfiles
-RUN chown testuser -R /home/testuser
+ENV HOME /home/testuser
+RUN chown testuser:testuser -R /home/testuser
 USER testuser
 ADD . /home/testuser/dotfiles
 CMD ["make", "install"]

@@ -6,6 +6,9 @@ eval "$(pyenv virtualenv-init -)"
 pyenv install 3.5.1
 pyenv local 3.5.1
 
+# To use the new python in the current session
+pyenv shell 3.5.1
+
 # Install pip
 easy_install pip
 
