@@ -3,7 +3,7 @@ OS = $(shell uname)
 check:
 	which curl
 
-install: uninstall	
+install:
 	if [ X"$(OS)" = X"Darwin" ]; then \
 	curl get.pow.cx | sh; \
 	else \
@@ -11,3 +11,8 @@ install: uninstall
 	fi;
 
 uninstall:
+	if [ X"$OS" = X"Darwin" ]; then \
+	curl get.pow.cx/uninstall.sh | sh; \
+	else \
+	echo "Pow is Macintosh only."; \
+	fi;

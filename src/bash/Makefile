@@ -3,7 +3,6 @@ check:
 	which git
 	which gpg
 	which gpg-agent
-	which python
 	which vi
 
 install: uninstall

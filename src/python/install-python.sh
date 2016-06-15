@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-export PATH="~/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 pyenv install 3.5.1
 pyenv local 3.5.1
+
+# Install pip
+easy_install pip
+
+# Neovim Python support
+pip install neovim

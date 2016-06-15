@@ -1,3 +1,5 @@
-install: uninstall
+check:
+
+install:
 
 uninstall:
