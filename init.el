@@ -1,5 +1,10 @@
 ; Stewart Park's emacs init.el
 
+(if (not (getenv "TERM_PROGRAM"))
+  (let ((path (shell-command-to-string
+          "$SHELL -cl \"printf %s \\\"\\\$PATH\\\"\"")))
+    (setenv "PATH" path)))
+
 (setq package-archives '(
     ("gnu" . "https://elpa.gnu.org/packages/")
     ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -8,7 +13,9 @@
 ))
 (setq package-list '(
     python-mode ruby-mode markdown-mode yaml-mode haskell-mode
-    org org-trello
+    dockerfile-mode
+    magit
+    org org-present org-trello
     ack fiplr
     neotree
 ))
@@ -31,4 +38,5 @@
 
     ; Set up keys
     (global-set-key (kbd "C-x f") 'fiplr-find-file)
+    (global-set-key (kbd "C-x C-f") 'ack)
 ))
