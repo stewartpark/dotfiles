@@ -31,8 +31,10 @@
 
 ; Autorun
 (add-hook 'after-init-hook (lambda ()
-    (global-git-gutter-mode t)
-    (global-linum-mode t)
+    (tool-bar-mode 0)
+    (menu-bar-mode 0)
+    (global-git-gutter-mode 1)
+    (global-linum-mode 1)
 
     ; Theme
     (load-theme 'monokai)
@@ -49,3 +51,9 @@
 (add-hook 'before-save-hook (lambda ()
     (delete-trailing-whitespace)
 ))
+
+; Safe themes
+(custom-set-variables
+ '(custom-safe-themes
+   (quote
+    ("c567c85efdb584afa78a1e45a6ca475f5b55f642dfcd6277050043a568d1ac6f" default))))
