@@ -40,9 +40,9 @@ To do
     - [x] GnuPG
     - [x] Git
     - [x] Python/pyenv
-    - [x] Ruby/rvm
+    - [x] Ruby/rbenv
     - [x] NeoVim
-    - [ ] Emacs
+    - [x] Emacs
     - [ ] Atom
 - [x] Have a basic test that at least tries to install all the things
 - [ ] Have thorough acceptance tests to maintain the configuration valid on various environments
