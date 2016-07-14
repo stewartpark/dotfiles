@@ -1,7 +1,7 @@
 export PATH="~/.rbenv/bin:$PATH"
 export PATH="~/.rbenv/shims:${PATH}"
 export RBENV_SHELL=bash
-source '~/.rbenv/completions/rbenv.bash'
+source ~/.rbenv/completions/rbenv.bash
 command rbenv rehash 2>/dev/null
 rbenv() {
   local command
