@@ -1,10 +1,6 @@
 ; Stewart Park's emacs init.el
 
-(if (not (getenv "TERM_PROGRAM"))
-  (let ((path (shell-command-to-string
-          "$SHELL -cl \"printf %s \\\"\\\$PATH\\\"\"")))
-    (setenv "PATH" path)))
-
+; Package setup
 (setq package-archives '(
     ("gnu" . "https://elpa.gnu.org/packages/")
     ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -22,6 +18,12 @@
 ))
 (package-initialize)
 
+; Misc. setup
+(if (not (getenv "TERM_PROGRAM"))
+  (let ((path (shell-command-to-string
+          "$SHELL -cl \"printf %s \\\"\\\$PATH\\\"\"")))
+    (setenv "PATH" path)))
+(setq make-backup-files nil)
 
 ; Install and refresh the packages
 (unless package-archive-contents (package-refresh-contents))
@@ -50,6 +52,18 @@
 ; Hooks
 (add-hook 'before-save-hook (lambda ()
     (delete-trailing-whitespace)
+))
+(add-hook 'org-present-mode-hook (lambda ()
+    (org-present-big)
+    (org-display-inline-images)
+    (neotree-hide)
+    (set-frame-parameter nil 'fullscreen 'fullboth)
+))
+(add-hook 'org-present-mode-quit-hook (lambda ()
+    (org-present-small)
+    (org-remove-inline-images)
+    (neotree-show)
+    (set-frame-parameter nil 'fullscreen nil)
 ))
 
 ; Safe themes
