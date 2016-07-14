@@ -12,12 +12,13 @@
     ("org" . "http://orgmode.org/elpa/")
 ))
 (setq package-list '(
-    python-mode ruby-mode markdown-mode yaml-mode haskell-mode
+    python-mode ruby-mode markdown-mode yaml-mode haskell-mode antlr-mode
     dockerfile-mode
-    magit
+    git-gutter magit
     org org-present org-trello
     ack fiplr
     neotree
+    monokai-theme
 ))
 (package-initialize)
 
@@ -30,8 +31,11 @@
 
 ; Autorun
 (add-hook 'after-init-hook (lambda ()
+    (global-git-gutter-mode t)
+    (global-linum-mode t)
+
     ; Theme
-    (load-theme 'tango-dark)
+    (load-theme 'monokai)
 
     ; Launch neotree
     (neotree)
@@ -39,4 +43,9 @@
     ; Set up keys
     (global-set-key (kbd "C-x f") 'fiplr-find-file)
     (global-set-key (kbd "C-x C-f") 'ack)
+))
+
+; Hooks
+(add-hook 'before-save-hook (lambda ()
+    (delete-trailing-whitespace)
 ))
