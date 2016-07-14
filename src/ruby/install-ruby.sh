@@ -3,8 +3,6 @@
 export PATH=$PATH:$HOME/.rbenv/bin
 eval $(rbenv init -)
 
-rbenv help
-
 rbenv install 2.3.1
 rbenv global 2.3.1
 
