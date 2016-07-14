@@ -69,3 +69,8 @@
     (set-frame-parameter nil 'fullscreen nil)
 ))
 
+(set-face-attribute
+    'default nil
+    :family "Roboto Mono"
+    :height 150
+    :weight 'normal)
