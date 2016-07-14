@@ -39,7 +39,7 @@
     (global-linum-mode 1)
 
     ; Theme
-    (load-theme 'monokai)
+    (load-theme 'monokai t)
 
     ; Launch neotree
     (neotree)
@@ -70,8 +70,3 @@
     (set-frame-parameter nil 'fullscreen nil)
 ))
 
-; Safe themes
-(custom-set-variables
- '(custom-safe-themes
-   (quote
-    ("c567c85efdb584afa78a1e45a6ca475f5b55f642dfcd6277050043a568d1ac6f" default))))
