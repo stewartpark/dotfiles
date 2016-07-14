@@ -4,6 +4,7 @@ check:
 	which gpg
 	which gpg-agent
 	which vi
+	which keychain
 
 install: uninstall
 	ln -sf $(shell pwd)/inc $(HOME)/.bash.inc

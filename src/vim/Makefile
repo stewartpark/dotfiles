@@ -4,8 +4,8 @@ check:
 	which gcc
 
 install:
-	git clone https://github.com/stewartpark/vimrc ./vim && cd ./vim && make install
+	git clone https://github.com/stewartpark/vimrc ./vimrc && cd ./vimrc && make install
 
 uninstall:
-	cd ./vim && make uninstall
-	rm -rf ./vim
+	cd ./vimrc && make uninstall
+	rm -rf ./vimrc
