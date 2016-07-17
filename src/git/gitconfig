@@ -1,5 +1,5 @@
 [user]
-	email = hello@stewartjpark.com 
+	email = hello@stewartjpark.com
 	name = Stewart Park
 	signingkey = B85463C5
 [push]
@@ -7,4 +7,4 @@
 [commit]
 	gpgsign = true
 [core]
-	excludesfile = /Users/stewart/.gitignore_global
+	excludesfile = ~/.gitignore_global
