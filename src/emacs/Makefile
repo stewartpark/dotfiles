@@ -1,5 +1,7 @@
 check:
+	which keychain
 	which emacs
+	which gtags
 
 install:
 	git clone https://github.com/stewartpark/emacsrc ./emacsrc &&\
