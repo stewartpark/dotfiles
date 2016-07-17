@@ -10,4 +10,5 @@ rbenv global 2.3.1
 rbenv shell 2.3.1
 
 # Install bundler
-gem install bundler
+rbenv exec gem install bundler
+rbenv rehash
