@@ -17,3 +17,10 @@
 
 # rbenv
 .ruby-version
+
+# Ruby
+.bundle
+.byebug_history
+
+# Nodejs
+npm-debug.log

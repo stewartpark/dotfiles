@@ -5,3 +5,4 @@ source ~/.bash.inc/git-prompt.sh
 source ~/.bash.inc/gpg-agent.sh
 source ~/.bash.inc/python-pyenv.sh
 source ~/.bash.inc/ruby-rbenv.sh
+source ~/.bash.inc/golang.sh
