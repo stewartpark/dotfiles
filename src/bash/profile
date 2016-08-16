@@ -1,3 +1,5 @@
+shell_session_update() { :; }
+
 source ~/.bash.inc/alias.sh
 source ~/.bash.inc/prompt.sh
 source ~/.bash.inc/git-completion.sh
