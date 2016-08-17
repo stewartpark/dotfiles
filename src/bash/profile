@@ -1,9 +1,8 @@
 shell_session_update() { :; }
 
 source ~/.bash.inc/alias.sh
-source ~/.bash.inc/prompt.sh
+source ~/.bash.inc/powerline.sh
 source ~/.bash.inc/git-completion.sh
-source ~/.bash.inc/git-prompt.sh
 source ~/.bash.inc/gpg-agent.sh
 source ~/.bash.inc/python-pyenv.sh
 source ~/.bash.inc/ruby-rbenv.sh
