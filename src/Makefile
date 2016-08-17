@@ -1,4 +1,4 @@
-SUBMODULES = bash gnupg git python emacs vim ruby pow
+SUBMODULES = bash gnupg git python emacs vim ruby pow tmux
 
 check:
 	for dir in $(SUBMODULES); do \

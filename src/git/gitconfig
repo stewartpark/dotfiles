@@ -8,3 +8,5 @@
 	gpgsign = true
 [core]
 	excludesfile = ~/.gitignore_global
+[diff]
+	compactionHeuristic = true
