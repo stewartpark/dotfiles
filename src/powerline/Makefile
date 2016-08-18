@@ -3,7 +3,8 @@ check:
 	which pip
 
 install: uninstall
-	pip install powerline-status
+	sudo pip install powerline-status
+	if [ "$(uname)" == "Darwin" ]; then brew install powerline; fi
 	mkdir -p $(HOME)/.config
 	ln -sf $(shell pwd)/config $(HOME)/.config/powerline
 

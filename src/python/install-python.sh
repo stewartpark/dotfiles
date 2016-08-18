@@ -3,7 +3,6 @@
 # System-wide Python set up
 sudo easy_install pip
 sudo pip install neovim  # Neovim Python support
-sudo pip install powerline-status  # Powerline
 sudo pip install psutil netifaces  # For Powerline
 
 # Local setup with pyenv
