@@ -1,6 +1,5 @@
 check:
 	which tmux
-	which reattach-to-user-namespace
 
 install: uninstall
 	ln -sf $(shell pwd)/tmux.conf $(HOME)/.tmux.conf
