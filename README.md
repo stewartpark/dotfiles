@@ -43,6 +43,8 @@ To do
     - [x] Ruby/rbenv
     - [x] NeoVim
     - [x] Emacs
+    - [x] tmux
+    - [x] Powerline
     - [ ] Atom
 - [x] Have a basic test that at least tries to install all the things
 - [ ] Have thorough acceptance tests to maintain the configuration valid on various environments
