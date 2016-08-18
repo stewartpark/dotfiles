@@ -75,22 +75,37 @@ _powerline_set_prompt() {
 
 _powerline_setup_prompt() {
 	VIRTUAL_ENV_DISABLE_PROMPT=1
-	if test -z "${POWERLINE_COMMAND}" ; then
-		POWERLINE_COMMAND="$("$POWERLINE_CONFIG_COMMAND" shell command)"
-	fi
-	test "x$PROMPT_COMMAND" != "x${PROMPT_COMMAND%_powerline_set_prompt*}" ||
-		PROMPT_COMMAND=$'_powerline_set_prompt\n'"${PROMPT_COMMAND}"
 	PS2="$(_powerline_local_prompt left -r.bash 0 0 continuation)"
 	PS3="$(_powerline_local_prompt left '' 0 0 select)"
 }
 
-if test -z "${POWERLINE_CONFIG_COMMAND}" ; then
-	if which powerline-config >/dev/null ; then
-		POWERLINE_CONFIG_COMMAND=powerline-config
-	else
-		POWERLINE_CONFIG_COMMAND="$(dirname "$BASH_SOURCE")/../../../scripts/powerline-config"
+_powerline_find_local_setup() {
+    local system_path="/usr/local/bin:/usr/bin:/bin"
+    local orig_path="$PATH"
+    PATH=$system_path
+
+    if test -z "${POWERLINE_CONFIG_COMMAND}" ; then
+        if which powerline-config >/dev/null ; then
+            POWERLINE_CONFIG_COMMAND="$(which powerline-config)"
+        else
+            POWERLINE_CONFIG_COMMAND="$(dirname "$BASH_SOURCE")/../../../scripts/powerline-config"
+        fi
+    fi
+
+	if test -z "${POWERLINE_COMMAND}" ; then
+        POWERLINE_COMMAND="$(which powerline)"
+        if test -z "${POWERLINE_COMMAND}" ; then
+            POWERLINE_COMMAND="$("$POWERLINE_CONFIG_COMMAND" shell command)"
+        fi
 	fi
-fi
+
+	test "x$PROMPT_COMMAND" != "x${PROMPT_COMMAND%_powerline_set_prompt*}" ||
+		PROMPT_COMMAND=$'_powerline_set_prompt\n'"${PROMPT_COMMAND}"
+
+    PATH=$orig_path
+}
+
+_powerline_find_local_setup
 
 if "${POWERLINE_CONFIG_COMMAND}" shell --shell=bash uses prompt ; then
 	_powerline_setup_prompt
