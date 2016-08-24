@@ -1,4 +1,4 @@
-if [[ -z "$TMUX" ]] && which tmux >& /dev/null; then
+if [[ -z "$TMUX" ]] && [[ "$TERM" =~ xterm.* ]] && which tmux >& /dev/null; then
   if ! tmux ls -F '#{session_name}' | grep "^$USER$" > /dev/null; then
     tmux new-session -s $USER \; detach
   fi
