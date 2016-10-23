@@ -6,7 +6,8 @@ check:
 install:
 	sudo pip install flake8 autopep8 isort
 	git clone https://github.com/stewartpark/emacsrc ./emacsrc &&\
-		cd ./emacsrc && mkdir -p ~/.emacs.d && ln -s `pwd`/init.el ~/.emacs.d/init.el
+		cd ./emacsrc && make install
 
 uninstall:
-	rm -rf ~/.emacs.d ./emacsrc
+	cd ./emacsrc && make uninstall
+	rm -rf ./emacsrc
