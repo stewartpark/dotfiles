@@ -1,7 +1,7 @@
 if [[ "`uname`" == "Linux" ]]; then
     alias ls='ls --color=always'
 else
-    alias ls='ls -G'
+    alias ls='gls --color=always'
 fi;
 
 alias tor-ssh='ssh -o "ProxyCommand nc -x 127.0.0.1:9050 %h %p"'

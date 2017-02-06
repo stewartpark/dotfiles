@@ -7,6 +7,7 @@ check:
 	which keychain
 
 install: uninstall
+	if [ "$(uname)" == "Darwin" ]; then brew install coreutils; fi
 	ln -sf $(shell pwd)/inc $(HOME)/.bash.inc
 	ln -sf $(shell pwd)/profile $(HOME)/.profile
 
