@@ -8,6 +8,6 @@
 	gpgsign = true
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = emacsclient -t
+	editor = emacsclient -c
 [diff]
 	compactionHeuristic = true
