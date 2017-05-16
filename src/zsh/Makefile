@@ -10,7 +10,7 @@ install: uninstall
 	if [ "$(uname)" == "Darwin" ]; then brew install coreutils zsh; fi
 	ln -sf $(shell pwd)/inc $(HOME)/.zsh.inc
 	ln -sf $(shell pwd)/functions $(HOME)/.zsh.functions
-	ln -sf $(shell pwd)/zshrc $(HOME)/.zshrc
+	ln -sf $(shell pwd)/zprofile $(HOME)/.zprofile
 
 uninstall:
 	rm -f $(HOME)/.zsh.inc
