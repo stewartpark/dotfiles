@@ -1,0 +1,16 @@
+shell_session_update() { :; }
+
+fpath=(~/.zsh_functions $fpath)
+autoload -Uz compinit && compinit
+
+source ~/.zsh.inc/alias.sh
+source ~/.zsh.inc/gpg-agent.sh
+source ~/.zsh.inc/powerline.sh
+source ~/.zsh.inc/python-pyenv.sh
+source ~/.zsh.inc/ruby-rbenv.sh
+source ~/.zsh.inc/golang.sh
+source ~/.zsh.inc/tmux.sh
+
+if [ -e ~/.zshrc.machine ]; then
+  source ~/.zshrc.machine
+fi
