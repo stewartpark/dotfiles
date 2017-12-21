@@ -1,5 +1,7 @@
 if [[ "`uname`" == "Linux" ]]; then
     alias ls='ls --color=always'
+    alias pbcopy='xsel --clipboard --input'
+    alias pbpaste='xsel --clipboard --output'
 else
     alias ls='gls --color=always'
 fi;
