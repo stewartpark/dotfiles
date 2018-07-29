@@ -3,7 +3,7 @@ Stewart's Dotfiles
 
 [![Build Status](https://travis-ci.org/stewartpark/dotfiles.svg?branch=master)](https://travis-ci.org/stewartpark/dotfiles)
 
-An automated dotfiles installer. Still a work-in-progress, but now at least it works.
+An automated dotfiles installer.
 
 How to use
 ==========
@@ -32,19 +32,20 @@ You also have to import Stewart Park's GPG public/private keys. This part makes 
 $ make import_gpg
 ```
 
-To do
-=====
+This repostiory includes configurations for
+===========================================
 
-- [ ] Install basic setups
-    - [x] Bash
-    - [x] GnuPG
-    - [x] Git
-    - [x] Python/pyenv
-    - [x] Ruby/rbenv
-    - [x] NeoVim
-    - [x] Emacs
-    - [x] tmux
-    - [x] Powerline
-    - [ ] Atom
-- [x] Have a basic test that at least tries to install all the things
-- [ ] Have thorough acceptance tests to maintain the configuration valid on various environments
+- Zsh
+- GnuPG
+- Git
+- Python/pyenv
+- Ruby/rbenv
+- Rust
+- Nodejs
+- Crystal-lang
+- Haskell
+- Silversearcher-ag
+- NeoVim
+- Emacs
+- Pow for Mac
+- tmux
