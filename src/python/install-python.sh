@@ -9,8 +9,8 @@ sudo pip install psutil netifaces  # For Powerline
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-pyenv install 3.6.4
-pyenv global 3.6.4
+pyenv install 3.7.0
+pyenv global 3.7.0
 
 # To use the new python in the current session
-pyenv shell 3.6.4
+pyenv shell 3.7.0
