@@ -1,5 +1,4 @@
 check:
-	which cargo
 
 install:
 	if hash brew 2>/dev/null; then \
