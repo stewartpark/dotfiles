@@ -1,4 +1,4 @@
-SUBMODULES = ttf-fonts zsh gnupg git python emacs vim ruby nodejs rust pow tmux haskell crystal-lang ag
+SUBMODULES = ttf-fonts zsh gnupg git python emacs vim ruby nodejs rust pow tmux haskell crystal-lang scala ag
 # Optional modules: bat
 
 check:
