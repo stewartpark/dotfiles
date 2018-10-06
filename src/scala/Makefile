@@ -10,7 +10,7 @@ install:
 		sudo apt-get update; \
 		sudo apt-get install -y scala sbt; \
 		cd /usr/share/scala/lib && sudo curl -O https://oss.sonatype.org/content/repositories/releases/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0-batch.jar; \
-		echo "#!/bin/sh\njava -jar /usr/share/scala/lib/scalastyle_*.jar \"$@\"" | sudo tee /usr/local/bin/scalastyle; \
+		echo "#!/bin/sh\njava -jar /usr/share/scala/lib/scalastyle_*.jar \"\$$@\"" | sudo tee /usr/local/bin/scalastyle; \
 		sudo chmod +x /usr/local/bin/scalastyle; \
 	fi
 
