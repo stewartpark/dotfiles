@@ -13,6 +13,8 @@ install:
 		echo "#!/bin/sh\njava -jar /usr/share/scala/lib/scalastyle_*.jar \"\$$@\"" | sudo tee /usr/local/bin/scalastyle; \
 		sudo chmod +x /usr/local/bin/scalastyle; \
 	fi
+	mkdir -p ~/.sbt/1.0/plugins/
+	echo 'addSbtPlugin("org.ensime" % "sbt-ensime" % "2.5.1")' > ~/.sbt/1.0/plugins/plugins.sbt
 
 uninstall:
 	if hash brew 2>/dev/null; then \
