@@ -8,7 +8,8 @@ install:
 	make -p ~/.ssh && touch ~/.ssh/config
 	git clone https://github.com/stewartpark/emacsrc ./emacsrc &&\
 		cd ./emacsrc && make install
+	ln -s `pwd`/xsessionrc ~/.xsessionrc
 
 uninstall:
 	cd ./emacsrc && make uninstall
-	rm -rf ./emacsrc
+	rm -rf ./emacsrc ~/.xsessionrc
