@@ -9,7 +9,8 @@ install:
 	git clone https://github.com/stewartpark/emacsrc ./emacsrc &&\
 		cd ./emacsrc && make install
 	ln -s `pwd`/xsessionrc ~/.xsessionrc
+	ln -s `pwd`/xresources ~/.Xresources
 
 uninstall:
 	cd ./emacsrc && make uninstall
-	rm -rf ./emacsrc ~/.xsessionrc
+	rm -rf ./emacsrc ~/.xsessionrc ~/.Xresources

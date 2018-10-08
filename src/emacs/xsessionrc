@@ -13,6 +13,7 @@ xset r rate 200 60
 xsetroot -cursor_name left_ptr
 xsetroot -solid white
 setxkbmap -layout us -option ctrl:nocaps
+xrdb -merge ~/.Xresources
 
 autokey &
 ibus-daemon &
