@@ -18,5 +18,6 @@ xrdb -merge ~/.Xresources
 
 autokey &
 ibus-daemon &
+nm-applet &
 
 exec emacs -l ~/.emacs.d/lisp/window-manager.el
