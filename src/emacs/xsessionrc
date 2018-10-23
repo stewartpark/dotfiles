@@ -17,7 +17,7 @@ setxkbmap -layout us -option ctrl:nocaps
 xrdb -merge ~/.Xresources
 
 autokey &
-ibus-daemon &
+ibus-daemon -r -x -d &
 nm-applet &
 
 exec emacs -l ~/.emacs.d/lisp/window-manager.el
