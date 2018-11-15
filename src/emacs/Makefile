@@ -5,7 +5,8 @@ check:
 
 install:
 	if hash apt-get 2>/dev/null; then \
-		sudo apt-get install -y cbatticon suckless-tools dunst; \
+		sudo apt-get install -y cbatticon suckless-tools dunst brightnessctl; \
+		sudo chmod u+s /usr/bin/brightnessctl
 	fi
 	sudo pip install flake8 autopep8 isort
 	make -p ~/.ssh && touch ~/.ssh/config
