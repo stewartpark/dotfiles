@@ -3,11 +3,11 @@
 export PATH=$PATH:$HOME/.rbenv/bin
 eval $(rbenv init -)
 
-rbenv install 2.5.1
-rbenv global 2.5.1
+rbenv install 2.5.3
+rbenv global 2.5.3
 
-# To use 2.3 in the current session
-rbenv shell 2.5.1
+# To use 2.5.3 in the current session
+rbenv shell 2.5.3
 
 # Install bundler and pry
 rbenv exec gem install bundler
