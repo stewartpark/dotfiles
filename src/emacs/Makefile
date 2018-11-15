@@ -4,6 +4,9 @@ check:
 	which pip
 
 install:
+	if hash apt-get 2>/dev/null; then \
+		sudo apt-get install -y cbatticon suckless-tools dunst; \
+	fi
 	sudo pip install flake8 autopep8 isort
 	make -p ~/.ssh && touch ~/.ssh/config
 	git clone https://github.com/stewartpark/emacsrc ./emacsrc &&\

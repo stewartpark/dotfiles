@@ -10,6 +10,7 @@ xhost +SI:localuser:$USER
 gnome-settings-daemon &
 gnome-screensaver &
 dunst &
+cbatticon &
 
 xset r rate 200 60
 xsetroot -cursor_name left_ptr
