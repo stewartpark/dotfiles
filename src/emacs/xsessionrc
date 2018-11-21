@@ -22,4 +22,4 @@ autokey &
 ibus-daemon -r -x -d &
 nm-applet &
 
-exec emacs -l ~/.emacs.d/lisp/window-manager.el
+exec dbus-launch emacs -l ~/.emacs.d/lisp/window-manager.el
