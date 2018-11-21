@@ -34,6 +34,6 @@ autokey &
 ibus-daemon -r -x -d &
 
 # Status Bar
-(while true; do echo dzen2; sleep 1; done) | (while true; do nc localhost 9999; done) | dzen2 -p -dock &
+(while true; do echo dzen2; sleep 1; done) | (while true; do nc localhost 9999; done) | dzen2 -p -dock -e "" &
 
 exec dbus-launch emacs -l ~/.emacs.d/lisp/window-manager.el
