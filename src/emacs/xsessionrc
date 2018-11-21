@@ -5,21 +5,35 @@ export EDITOR="$VISUAL"
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 xhost +SI:localuser:$USER
-gnome-settings-daemon &
-gnome-screensaver &
-dunst &
-cbatticon &
-
 xset r rate 200 60
 xsetroot -cursor_name left_ptr
 xsetroot -solid black
 setxkbmap -layout us -option ctrl:nocaps
 xrdb -merge ~/.Xresources
 
-autokey &
-ibus-daemon -r -x -d &
+gnome-settings-daemon &
+gnome-screensaver &
+xcompmgr &
+
+# Notificaiton Daemon
+dunst &
+
+# Battery Status
+cbatticon &
+
+# Network Manager
 nm-applet &
+
+# Key binding
+autokey &
+
+# XIM
+ibus-daemon -r -x -d &
+
+# Status Bar
+(while true; do echo dzen2; sleep 1; done) | (while true; do nc localhost 9999; done) | dzen2 -p -dock
 
 exec dbus-launch emacs -l ~/.emacs.d/lisp/window-manager.el
