@@ -24,6 +24,9 @@ dunst &
 # Network Manager
 nm-applet &
 
+# Bluetooth
+blueman-applet &
+
 # Key binding
 autokey &
 
