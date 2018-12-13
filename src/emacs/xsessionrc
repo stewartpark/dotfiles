@@ -2,9 +2,9 @@
 
 export VISUAL=emacsclient
 export EDITOR="$VISUAL"
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 xhost +SI:localuser:$USER
@@ -18,6 +18,9 @@ gnome-settings-daemon &
 gnome-screensaver &
 xcompmgr &
 
+# XIM
+fcitx &
+
 # Notificaiton Daemon
 dunst &
 
@@ -29,9 +32,6 @@ blueman-applet &
 
 # Key binding
 autokey &
-
-# XIM
-ibus-daemon -r -x -d &
 
 # Status Bar
 (while true; do echo dzen2; sleep 3; done) | (while true; do nc localhost 9999; done) | \
