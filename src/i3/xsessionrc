@@ -17,6 +17,9 @@ xrdb -merge ~/.Xresources
 # Run emacs daemon
 emacs --daemon &
 
+# Autokey
+autokey &
+
 gnome-settings-daemon &
 gnome-screensaver &
 
@@ -38,4 +41,4 @@ blueman-applet &
 # Caffeine Indicator
 caffeine-indicator &
 
-exec stumpwm
+exec i3
