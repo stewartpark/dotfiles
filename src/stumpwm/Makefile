@@ -1,12 +1,7 @@
 check:
 	which stumpwm
 	which emacs
-	which dunst
-	which nm-applet
-	which blumena-applet
-	which xcompmgr
 	which fcitx
-	which brightnessctl
 
 install:
 	git clone git@github.com:stumpwm/stumpwm-contrib.git stumpwm-contrib
