@@ -14,8 +14,13 @@ xsetroot -solid black
 setxkbmap -layout us -option ctrl:nocaps
 xrdb -merge ~/.Xresources
 
+# Run emacs daemon
+emacs --daemon &
+
 gnome-settings-daemon &
 gnome-screensaver &
+
+# Composite manager
 xcompmgr &
 
 # XIM
@@ -30,11 +35,7 @@ nm-applet &
 # Bluetooth
 blueman-applet &
 
-# Key binding
-autokey &
+# Caffeine Indicator
+caffeine-indicator &
 
-# Status Bar
-(while true; do echo dzen2; sleep 3; done) | (while true; do nc localhost 9999; done) | \
-    (while true; do dzen2 -p -dock -e ""; done) &
-
-exec dbus-launch emacs -l ~/.emacs.d/lisp/window-manager.el
+exec stumpwm

@@ -1,5 +1,4 @@
-SUBMODULES = ttf-fonts zsh gnupg git python emacs vim ruby nodejs rust pow tmux haskell crystal-lang scala golang ag
-# Optional modules: bat
+SUBMODULES = ttf-fonts zsh gnupg git python emacs vim ruby nodejs rust pow tmux haskell crystal-lang scala golang stumpwm ag bat
 
 check:
 	for dir in $(SUBMODULES); do \
