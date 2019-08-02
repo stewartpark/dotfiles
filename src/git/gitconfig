@@ -11,3 +11,7 @@
 	editor = emacsclient
 [diff]
 	compactionHeuristic = true
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
+[github]
+	user = stewartpark
