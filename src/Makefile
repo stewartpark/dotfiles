@@ -1,4 +1,8 @@
-SUBMODULES = ttf-fonts zsh gnupg git python emacs ruby nodejs rust pow tmux golang scala bat
+SUBMODULES = ttf-fonts \
+  zsh tmux gnupg \
+  emacs \
+  python ruby nodejs rust golang scala \
+  git rg
 
 check:
 	for dir in $(SUBMODULES); do \

@@ -1,5 +1,5 @@
 NVM_DIR=${HOME}/.nvm
-NODE_VERSION=11.15.3
+NODE_VERSION=13.14.0
 
 check:
 	which git

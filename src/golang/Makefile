@@ -1,9 +1,8 @@
 check:
-	which bash
 	which curl
 
 install:
-	curl -sSL https://git.io/g-install | bash
+	curl -sSL https://git.io/g-install | sh -s -- -y
 
 uninstall:
 	rm -rf ~/.go

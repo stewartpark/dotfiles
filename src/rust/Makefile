@@ -2,9 +2,8 @@ check:
 	which curl
 
 install:
-	curl https://sh.rustup.rs -sSf | bash -s -- -y --no-modify-path
-	rustup component add rust-src
-	cargo install racer
+	curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path
+	./install-rust.sh
 
 uninstall:
 	rustup self uninstall
