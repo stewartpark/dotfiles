@@ -1,5 +1,5 @@
 check:
-	which ~/.cargo/env
+	which bash
 
 install:
 	./install-rg.sh
