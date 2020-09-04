@@ -5,6 +5,7 @@ check:
 	which gpg-agent
 	which vi
 	which keychain
+	if [ "$(uname)" == "Darwin" ]; then which gls; fi
 
 install: uninstall
 	if [ "$(uname)" == "Darwin" ]; then brew install coreutils zsh; fi

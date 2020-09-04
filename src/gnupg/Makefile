@@ -1,6 +1,7 @@
 check:
 	which gpg
 	which gpg-agent
+	which pidof
 
 install:
 	mkdir -p ~/.gnupg
