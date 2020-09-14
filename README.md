@@ -1,12 +1,10 @@
-Stewart's Dotfiles
-==================
+# Stewart's Dotfiles
 
 [![Build Status](https://travis-ci.org/stewartpark/dotfiles.svg?branch=master)](https://travis-ci.org/stewartpark/dotfiles)
 
 An automated dotfiles installer.
 
-How to use
-==========
+## How to use
 
 To test if you have all the binaries you need for this set up, please run the following:
 
@@ -32,20 +30,6 @@ You also have to import Stewart Park's GPG public/private keys. This part makes 
 $ make import_gpg
 ```
 
-This repostiory includes configurations for
-===========================================
+## TO DO
 
-- Zsh
-- GnuPG
-- Git
-- Python/pyenv
-- Ruby/rbenv
-- Rust
-- Nodejs
-- Crystal-lang
-- Haskell
-- Silversearcher-ag
-- NeoVim
-- Emacs
-- Pow for Mac
-- tmux
+- For scala, https://get-coursier.io/docs/cli-installation
