@@ -1,17 +1,26 @@
 [user]
 	email = hello@stewartjpark.com
 	name = Stewart Park
-	#signingkey = B85463C5
+	signingkey = B85463C5
+
 [push]
 	default = simple
+
+[pull]
+	rebase = false
+
 [commit]
-	#gpgsign = true
+	gpgsign = true
+
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = emacsclient
+	editor = code
+
 [diff]
 	compactionHeuristic = true
+
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
+
 [github]
 	user = stewartpark

@@ -1,0 +1,21 @@
+# Theme
+equinusocio.vsc-material-theme
+
+# Languages
+rust-lang.rust
+golang.go
+rebornix.ruby
+ms-python.python
+svelte.svelte-vscode
+mgmcdermott.vscode-language-babel
+mads-hartmann.bash-ide-vscode
+redhat.vscode-yaml
+hashicorp.terraform
+yzhang.markdown-all-in-one
+
+# Vim
+vscodevim.vim
+
+# Utilities
+ms-vsliveshare.vsliveshare
+ms-toolsai.jupyter
