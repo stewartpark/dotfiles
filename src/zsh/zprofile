@@ -19,7 +19,7 @@ source ~/.zsh.inc/jvm-sdkman.sh
 source ~/.zsh.inc/golang.sh
 source ~/.zsh.inc/rust.sh
 source ~/.zsh.inc/tmux.sh
-source ~/.zsh.inc/emacs.sh
+source ~/.zsh.inc/vscode.sh
 
 if [ -e ~/.zshrc.machine ]; then
   source ~/.zshrc.machine

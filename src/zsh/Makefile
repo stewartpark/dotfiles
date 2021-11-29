@@ -3,7 +3,6 @@ check:
 	which git
 	which gpg
 	which gpg-agent
-	which vi
 	which keychain
 	if [ "$(uname)" == "Darwin" ]; then which gls; fi
 
