@@ -5,6 +5,10 @@ autoload -Uz compinit vcs_info && compinit
 zstyle ':vcs_info:*' enable git
 precmd() { vcs_info }
 
+if [ -d /opt/homebrew ]; then
+  export PATH=$PATH:/opt/homebrew/bin
+fi
+
 source ~/.zsh.inc/zgen.zsh
 source ~/.zsh.inc/alias.sh
 source ~/.zsh.inc/gpg-agent.sh

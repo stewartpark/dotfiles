@@ -1,6 +1,5 @@
 SUBMODULES = ttf-fonts \
   zsh tmux gnupg \
-  vscode \
   python ruby nodejs rust golang scala \
   git rg
 
