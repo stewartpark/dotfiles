@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NODE_VERSION=v13.14.0
+NODE_VERSION=stable
 
 pushd .
 cd ~/.nvm

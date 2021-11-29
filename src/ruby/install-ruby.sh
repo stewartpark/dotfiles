@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-RUBY_VERSION=2.7.1
+RUBY_VERSION=2.7.5
 
 export PATH=$PATH:$HOME/.rbenv/bin
 eval "$(rbenv init -)"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PYTHON_VERSION=3.8.5
+PYTHON_VERSION=3.8.12
 
 # Local setup with pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
