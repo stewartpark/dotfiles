@@ -2,4 +2,4 @@
 
 source $HOME/.cargo/env
 
-rustup component add rust-src
+rustup component add rls rust-analysis rust-src
