@@ -20,6 +20,7 @@ source ~/.zsh.inc/golang.sh
 source ~/.zsh.inc/rust.sh
 source ~/.zsh.inc/tmux.sh
 source ~/.zsh.inc/emacs.sh
+source ~/.zsh.inc/gcloud.sh
 
 if [ -e ~/.zshrc.machine ]; then
   source ~/.zshrc.machine
